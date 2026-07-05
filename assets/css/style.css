@@ -1,15 +1,95 @@
-body { background-color: #121212; color: white; font-family: sans-serif; margin: 0; }
+/* تنسيق عام للموقع */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* شريط التنقل */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background: #1a1a1a;
+    border-bottom: 2px solid #4caf50;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 /* قسم البانر */
-.hero { background: #1e1e1e; padding: 50px; text-align: center; border-bottom: 3px solid #4caf50; }
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: #1e1e1e;
+}
+.hero button {
+    background: #5865f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
 
-/* المربعات (الكاتيجوري) */
-.categories { display: flex; gap: 20px; padding: 20px; justify-content: center; }
-.card { background: #1e1e1e; padding: 20px; border: 1px solid #333; border-radius: 10px; width: 150px; text-align: center; }
+/* قسم المربعات */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+.card:hover {
+    border-color: #4caf50;
+}
 
-/* الجدول والبحث */
-.content { padding: 20px; max-width: 800px; margin: auto; }
-input { width: 100%; padding: 10px; margin-bottom: 20px; background: #1e1e1e; border: 1px solid #4caf50; color: white; }
-table { width: 100%; border-collapse: collapse; }
-td, th { padding: 15px; border-bottom: 1px solid #333; text-align: right; }
-
+/* الجدول ومربع البحث */
+.content {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #1e1e1e;
+    border: 1px solid #4caf50;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+    text-align: right;
+}
+th {
+    color: #4caf50;
+}
