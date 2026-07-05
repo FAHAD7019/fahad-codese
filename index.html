@@ -2,10 +2,22 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fahad Codes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+    <!-- شريط التنقل -->
+    <nav>
+        <div class="logo">Fahad Codes</div>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="commands.html">الأوامر</a></li>
+            <li><a href="#">ديسكورد</a></li>
+        </ul>
+    </nav>
+
     <!-- قسم البانر (Hero) -->
     <header class="hero">
         <h1>Fahad Codes</h1>
@@ -24,10 +36,25 @@
     <main class="content">
         <input type="text" placeholder="ابحث عن أمر...">
         <table>
-            <tr><th>الأمر</th><th>الوصف</th></tr>
-            <tr><td>/gamemode</td><td>تغيير وضع اللعبة</td></tr>
+            <thead>
+                <tr>
+                    <th>الأمر</th>
+                    <th>الوصف</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/gamemode</td>
+                    <td>تغيير وضع اللعبة</td>
+                </tr>
+                <tr>
+                    <td>/tp</td>
+                    <td>الانتقال</td>
+                </tr>
+            </tbody>
         </table>
     </main>
+
 </body>
 </html>
 
