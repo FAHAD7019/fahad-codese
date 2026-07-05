@@ -14,15 +14,17 @@
         <ul>
             <li><a href="index.html">الرئيسية</a></li>
             <li><a href="commands.html">الأوامر</a></li>
-            <li><a href="#">ديسكورد</a></li>
+            <li><a href="https://discord.gg/rE8da8nZx" target="_blank">ديسكورد</a></li>
         </ul>
     </nav>
 
-    <!-- قسم البانر (Hero) -->
+    <!-- قسم البانر -->
     <header class="hero">
         <h1>Fahad Codes</h1>
         <p>جميع أوامر ماين كرافت في مكان واحد</p>
-        <button>انضم إلى سيرفر الدسكورد</button>
+        <a href="https://discord.gg/rE8da8nZx" target="_blank">
+            <button>انضم إلى سيرفر الدسكورد</button>
+        </a>
     </header>
 
     <!-- قسم المربعات -->
@@ -34,7 +36,7 @@
 
     <!-- قسم الجدول -->
     <main class="content">
-        <input type="text" placeholder="ابحث عن أمر...">
+        <input type="text" id="searchInput" placeholder="ابحث عن أمر...">
         <table>
             <thead>
                 <tr>
@@ -42,19 +44,14 @@
                     <th>الوصف</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>/gamemode</td>
-                    <td>تغيير وضع اللعبة</td>
-                </tr>
-                <tr>
-                    <td>/tp</td>
-                    <td>الانتقال</td>
-                </tr>
+            <tbody id="commands-tbody">
+                <!-- الأوامر ستظهر هنا تلقائياً -->
             </tbody>
         </table>
     </main>
 
+    <!-- ربط ملفات الجافا سكريبت -->
+    <script src="assets/js/commands-data.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
-
